@@ -23,7 +23,7 @@ install:
   - set PATH=C:\msys64\usr\bin\;%PATH%
   - pacman --noconfirm -Syu
   - pacman --noconfirm -S zip
-  - sh -c "curl -L http://bodge.borodust.org/files/install.sh | sh"
+  - sh -c "curl -L http://bodge.borodust.org/files/install.sh | sh -s ccl"
   - sh -c "$HOME/.bodge/bin/lisp install-dist"
 
 build_script:
