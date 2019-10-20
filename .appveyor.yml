@@ -1,5 +1,5 @@
 image:
-  - Visual Studio 2019
+  - Visual Studio 2013
 
 platform:
   - x64
@@ -24,7 +24,7 @@ install:
   - pacman --noconfirm -Syu
   - pacman --noconfirm -S zip
   - sh -c "curl -L http://bodge.borodust.org/files/install.sh | sh"
-  - sh -c "$HOME/.bodge/bin/lisp install-testing-dist"
+  - sh -c "$HOME/.bodge/bin/lisp install-dist"
 
 build_script:
   - >
